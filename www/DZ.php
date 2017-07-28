@@ -31,8 +31,6 @@
 class GuestBook
 {
 	protected $path;
-	protected $legs;
-	protected $color;
 	
 	public function getData()
 	{
@@ -64,7 +62,10 @@ class GuestBook
 	}
 	
 }
-$b1 = new GuestBook('guestbook')
+$b1 = new GuestBook('guestbook');
+;
+//var_dump($b1->getData(  'Trulala'));
+var_dump($b1->append('Trulala'));
 ?>
 </body>
 </html>
